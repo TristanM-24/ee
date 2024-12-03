@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poetsen One', sans-serif;
+    font-size: 18px;
+    background-color: #fafafa;
+}
+
+h1, h2, h3, h4, h4, h6 {
+    font-family: 'Poetsen One', sans-serif;
+    font-weight: 500;
+}
+
+h1 {
+    font-size: 42px;
+}
+
+a {
+    text-decoration: none;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+nav a {
+    margin-left: 30px;
+    color: #222222;
+    transition: all 0.2s ease-in-out;
+}
+
+nav a:hover {
+    opacity: 0.4;
+    cursor: pointer;
+    color: #61D4EF;
+}
+
+#hero {
+    background-image: url(images/bg-pattern.svg);
+    background-repeat: no-repeat;
+    background-size: 200px;
+    background-position: 90% 10%;
+}
+
+#hero .container {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    align-content: center;
+    height: calc(100vh - 155px);
+}
+
+#hero .container img {
+    max-width: 100%;
+    border-radius: 8px;
+    border: solid 20px #fff;
+    transform: rotate(4deg);
+    margin-left: -20px;
+    margin-top: -20px;
+    box-shadow: #e5e5e5 0px 0px 20px;
+}
+
+#hero .container div:nth-child(1) {
+    margin-right: 60px;
+}
+
+#hero .container a {
+    display: block;
+    margin-top: 20px;
+    color: #1B1421;
+    transition: all 0.2s ease-in-out;
+}
+
+#hero .container a:hover {
+    opacity: 0.6;
+    cursor: pointer;
+    color: #61D4EF;
+}
+
+#about-home {
+    background-color: #1B1421;
+    color: #efefef;
+}
+
+#about-home .container {
+    display: grid;
+    grid-template-columns: 1.6fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+#about-home .container button {
+    height: 65px;
+    line-height: 65px;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    padding: 0 80px;
+    border-radius: 8px;
+    background-color: #61D4EF;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 3px;
+    color: #fff;
+    border: 0;
+    transition: all 0.2s ease-in-out;
+}
+
+#about-home .container button:hover {
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 15px;
+    background-color: #c0bdbd;
+    cursor: pointer;
+    color: #61D4EF;
+}
+
+.about-icons {
+    display: flex;
+}
+
+.about-icons img {
+    width: 30px;
+    margin-top: 20px;
+    margin-right: 15px;
+    margin-bottom: 20px;
+}
+
+.about-icons img:nth-child(1) {
+    width: 20px;
+}
+
+#my-work .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+#my-work .container img {
+    width: 320px;
+    text-align: center;
+    border-radius: 10px;
+    border: solid 15px #fff;
+    box-shadow: #e5e5e5 0px 0px 2px;
+    transition: all 0.4s ease-in-out;
+}
+
+#my-work .container a > img:hover {
+    box-shadow: #e5e5e5 0px 0px 20px;
+    transform: rotate(4deg);
+}
+
+#my-work .container a img {
+    max-width: 750px;
+}
+
+footer {
+    text-align: center;
+}
+
+footer nav {
+    display: flex;
+    color: #fff;
+    justify-content: center;
+}
+
+footer nav a img {
+    width: 25px;
+}
+
+#contact form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#contact form  input, #contact form button, #contact form textarea {
+    display: block;
+    margin-top: 25px;
+    border-radius: 8px;
+    border: solid #cdcdcd 2px;
+    width: 100%;
+    padding: 20px 30px;
+    box-sizing: border-box;
+}
+
+#contact form button {
+    border: 0;
+    background-color: #61D4EF;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #efefef;
+    transition: all 0.2s ease-in-out;
+}
+
+#contact form button:hover {
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 15px;
+    background-color: #c0bdbd;
+    cursor: pointer;
+    color: #61D4EF;
+}
